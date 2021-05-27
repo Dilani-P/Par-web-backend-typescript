@@ -9,7 +9,7 @@ class User{
             
             const newUser:IUser = req.body;
             const result = await UserModel.create(newUser)
-            res.code(200).send({
+            res.code(201).send({
                 success : true,
                 data : result,
                 message : "Users Created !"
